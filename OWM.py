@@ -14,8 +14,6 @@ for x in response['list']:
 	dates.append( x['dt_txt'])
 	temps.append(x['main']['temp']-273.15)
 
-	temps. (temps - 273)
-
 y.add_column("Date", dates)
 y.add_column("Temperature", temps)
 
