@@ -14,10 +14,14 @@ for x in response['list']:
 	dates.append( x['dt_txt'])
 	temps.append(x['main']['temp']-273.15)
 
-	temps. (temps - 273)
-
 y.add_column("Date", dates)
 y.add_column("Temperature", temps)
 
+avg = float(sum(temps)/len(temps))
+
 print y
+print (int(avg))
+print (u'\u00b0'+ " C")
+
+
 
