@@ -15,7 +15,7 @@ for x in response['list']:
 	temps.append(x['main']['temp']-273.15)
 
 y.add_column("Date", dates)
-y.add_column("Temperature", temps)
+y.add_column("Temperature (u'\u00b0'+ C)", temps)
 
 avg = float(sum(temps)/len(temps))
 
